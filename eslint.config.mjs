@@ -59,5 +59,7 @@ export default defineConfig([{
     rules: {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/triple-slash-reference": "off",
     },
 }]);
