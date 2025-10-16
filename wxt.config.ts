@@ -6,6 +6,7 @@ export default defineConfig({
   webExt: {
       binaries: {
         chrome: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+        firefox: 'C:\\Program Files\\Mozilla Firefox\\firefox.exe',
       },
     },
 });
