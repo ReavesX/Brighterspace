@@ -13,7 +13,7 @@ stats.html
 stats-*.json
 .wxt
 web-ext.config.ts
-
+node_modules\.vite\deps\_metadata.json
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
