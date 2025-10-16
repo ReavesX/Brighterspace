@@ -1,10 +1,11 @@
+// main.tsx - Its ONLY job is to start the app.
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import './style.css';
+import Popup from '../../components/Popup.tsx'; // Imports the main component
 
+// Renders the <Popup /> component
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <Popup />
   </React.StrictMode>,
 );
