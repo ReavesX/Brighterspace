@@ -66,7 +66,7 @@ A cross-browser extension built with WXT that retools the D2L-based Brightspace 
 
 ## ☁️ Phase 3: Backend & Sync (v0.3.x)
 **Goal:** Establish a cloud backend with authentication, sync, and staging deployment.
-*(This phase is unchanged as it focuses on the backend.)*
+
 
 ### 0.3.0 – Backend scaffold
 - `chore(api)`: Scaffold Node.js + Express server
