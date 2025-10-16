@@ -1,41 +1,42 @@
 # Brighterspace
-An extension that retools the D2L based Brightspace LMS improving the UI and Extending the functionality.
+A cross-browser extension built with WXT that retools the D2L-based Brightspace LMS, improving the UI and extending its functionality.
 # Brighterspace Development Phases 🚀
 *6-phase development roadmap from initial scaffold to public release.*
 
 ---
 
 ## 🏗️ Phase 1: Foundation (v0.1.x)
-**Goal:** Build a functional Chrome extension skeleton that loads, builds cleanly, and injects into Brightspace.
+**Goal:** Build a functional, **cross-browser** extension skeleton using WXT that loads, builds cleanly, and injects into Brightspace.
 
 ### 0.1.0 – Repo setup
-- `chore(init)`: Scaffold extension project with React + TypeScript + Tailwind
-- `chore(config)`: Add ESLint and Prettier
+- `chore(init)`: Scaffold project with **WXT** (React, TS, Tailwind)
+- `chore(config)`: Add ESLint and Prettier for code quality
 
-### 0.1.1 – Chrome extension basics
-- `feat(manifest)`: Add MV3 manifest with permissions
-- `feat(background)`: Add service worker placeholder
+### 0.1.1 – WXT configuration
+- `feat(config)`: Configure `wxt.config.ts` with manifest details (permissions, icons)
+- `feat(entrypoints)`: Establish background and content script entrypoints
 
 ### 0.1.2 – Popup skeleton
 - `feat(popup)`: Implement React popup with placeholder nav
 - `style(popup)`: Add Tailwind styles for popup layout
 
 ### 0.1.3 – Content script injection
-- `feat(content-script)`: Inject script into Brightspace pages
+- `feat(content-script)`: Implement logic to interact with Brightspace pages
 - `test(content-script)`: Add smoke test for DOM injection
 
 ### 0.1.4 – IndexedDB layer
 - `feat(storage)`: Set up Dexie schema for tasks
-- `refactor(storage)`: Abstract storage utils for sidebar
+- `refactor(storage)`: Abstract storage utils for the sidebar
 
 ### 0.1.5 – Initial sidebar
-- `feat(sidebar)`: Add persistent sidebar container
-- `feat(sidebar)`: Render placeholder task list
+- `feat(sidebar)`: Add persistent sidebar container as a UI entrypoint
+- `feat(sidebar)`: Render placeholder task list from storage
 
 ---
 
 ## ⚡ Phase 2: Core Features (v0.2.x)
 **Goal:** Implement rubric parsing, task persistence, quick submission, and screenshot capture.
+*(This phase is unchanged as it focuses on application logic.)*
 
 ### 0.2.0 – Rubric detection
 - `feat(parser)`: Add DOM parser for rubric tables
@@ -65,6 +66,7 @@ An extension that retools the D2L based Brightspace LMS improving the UI and Ext
 
 ## ☁️ Phase 3: Backend & Sync (v0.3.x)
 **Goal:** Establish a cloud backend with authentication, sync, and staging deployment.
+*(This phase is unchanged as it focuses on the backend.)*
 
 ### 0.3.0 – Backend scaffold
 - `chore(api)`: Scaffold Node.js + Express server
@@ -94,6 +96,7 @@ An extension that retools the D2L based Brightspace LMS improving the UI and Ext
 
 ## 👥 Phase 4: Advanced Collaboration (v0.4.x)
 **Goal:** Enable CRDT-based real-time collaboration and advanced rubric automation.
+*(This phase is unchanged as it focuses on application logic.)*
 
 ### 0.4.0 – CRDT integration
 - `feat(crdt)`: Integrate Yjs for conflict-free sync
@@ -118,7 +121,7 @@ An extension that retools the D2L based Brightspace LMS improving the UI and Ext
 ---
 
 ## ✨ Phase 5: Polish & Testing (v0.5.x)
-**Goal:** Improve UX, add testing coverage, ensure privacy compliance, and support multiple browsers.
+**Goal:** Improve UX, add testing coverage, ensure privacy compliance, and leverage WXT for multi-browser support.
 
 ### 0.5.0 – Test suite
 - `test(unit)`: Add Jest unit tests
@@ -133,8 +136,8 @@ An extension that retools the D2L based Brightspace LMS improving the UI and Ext
 - `feat(telemetry)`: Add optional anonymous analytics
 
 ### 0.5.3 – Cross-browser support
-- `fix(build)`: Support Firefox MV3 manifest
-- `test(compat)`: Verify Edge + Brave builds
+- `chore(build)`: **Generate and test builds for Firefox, Edge, and other target browsers using WXT's built-in capabilities**
+- `test(compat)`: Address any browser-specific CSS or API issues
 
 ### 0.5.4 – Security audit
 - `chore(audit)`: Run dependency vulnerability scan
@@ -143,11 +146,11 @@ An extension that retools the D2L based Brightspace LMS improving the UI and Ext
 ---
 
 ## 🎉 Phase 6: Release (v1.0.x)
-**Goal:** Final polish and public launch on Chrome Web Store.
+**Goal:** Final polish and public launch on the Chrome Web Store and other marketplaces.
 
 ### 1.0.0-alpha – Internal release
 - `docs(readme)`: Update usage instructions
-- `chore(build)`: Optimize webpack bundle
+- `chore(build)`: Optimize production build with **Vite**
 
 ### 1.0.0-beta – Beta testing
 - `docs(contrib)`: Add contribution guidelines
@@ -173,12 +176,12 @@ An extension that retools the D2L based Brightspace LMS improving the UI and Ext
 ---
 
 ## 🎯 Key Milestones
-- **v0.1.5** – Working Chrome extension with sidebar
+- **v0.1.5** – Working **cross-browser** extension with sidebar
 - **v0.2.5** – Full offline functionality with rubric parsing
 - **v0.3.5** – Cloud sync and authentication working
 - **v0.4.4** – Real-time collaboration features complete
 - **v0.5.4** – Production-ready with full test coverage
-- **v1.0.0** – Public release on Chrome Web Store
+- **v1.0.0** – Public release on extension stores
 
 ---
 
